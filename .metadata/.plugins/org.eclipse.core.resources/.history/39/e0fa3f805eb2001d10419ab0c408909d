@@ -1,0 +1,14 @@
+package chapter1.B_Constant;
+
+public class Constant {
+
+	public static void main(String[] args) {
+		// 상수는 데이터를 변경하면 안될 경우에 사용.
+		// 상수는 대문자로 선언. UPPER_SNAKE_CASE 명명 규칙. 띄어쓰기는 _ 사용.
+		final int WIDTH = 1920;
+		final int HEIGTH = 1080;
+		int SIZE = WIDTH * HEIGTH;  // 고정되어있어야 하는 값.
+		// 데이터에 이름을 부여하고 싶을 경우에 사용.
+	}
+
+}

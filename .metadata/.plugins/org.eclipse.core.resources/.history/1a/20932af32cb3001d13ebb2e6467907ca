@@ -1,0 +1,10 @@
+package chapter1.F_Operator;
+
+public class Operator {
+	public static void main(String[] args) {
+		int num = 10;
+		
+		int re = num == 10 ? 1 : 0;
+		System.out.println(re);
+	}
+}

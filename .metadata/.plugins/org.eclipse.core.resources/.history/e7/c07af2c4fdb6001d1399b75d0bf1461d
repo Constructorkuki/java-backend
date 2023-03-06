@@ -1,0 +1,29 @@
+package chapter3.A_Login;
+import java.util.*;
+public class Login {
+
+	public static void main(String[] args) {
+		final String ID = "qwer1234";
+		final String PASSWORD = "qwer1234";
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("아이디 및 비번 입력.");
+		String userId = scanner.nextLine();
+		String userPassword = scanner.nextLine();
+		
+		// isEmpty : 값이 비었으면 true , 아니면 false.
+		if(userId.isEmpty() || userPassword.isEmpty()) {
+			System.out.println("모두 입력하세요");
+			 return; // 끝나면 프로세스? 스레드? 가 끝나야댐. 알고리즘? 적으로. 아마  프로세스인거같음.
+		}
+		
+		// 사용자 입력값과 저장된 값이 같은지 검증.
+		// strung.equals 같으면 true , 아니면 false.
+		if(!userId.equals(ID) || !userPassword.equals(PASSWORD)) {
+			System.out.println("로그인 정보가 일치하지 않습니다.");
+			return;
+		}
+		System.out.println("성공");
+	}
+
+}

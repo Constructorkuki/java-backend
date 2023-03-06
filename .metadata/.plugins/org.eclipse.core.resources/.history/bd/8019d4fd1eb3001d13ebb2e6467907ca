@@ -1,0 +1,17 @@
+package chapter1.D_IO;
+import java.util.*;
+
+public class IO {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		//String string1 = sc.next();
+		//int int1 = sc.nextInt();
+		
+		//System.out.println(string1);
+		//System.out.println(int1);
+		
+		System.out.println('1' + 2);
+	}
+
+}

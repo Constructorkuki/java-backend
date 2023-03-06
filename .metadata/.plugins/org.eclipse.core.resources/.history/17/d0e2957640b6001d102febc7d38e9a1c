@@ -1,0 +1,12 @@
+package chapter2.C_For;
+
+public class For {
+
+	public static void main(String[] args) {
+		// 반복 횟수 상관없이 조건만 보는 경우 while 문.
+		// 횟수 정해서 돌릴떄 for 문.
+		
+		
+	}
+
+}

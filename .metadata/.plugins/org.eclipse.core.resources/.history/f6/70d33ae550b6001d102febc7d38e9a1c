@@ -1,0 +1,17 @@
+package chapter3.A_Login;
+import java.util.*;
+public class Login {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		String userId = scanner.nextLine();
+		String userPassword = scanner.nextLine();
+		
+		if(userId.isEmpty() || userPassword.isEmpty()) {
+			System.out.println("모두 입력하세요");
+			 return;
+		}
+	}
+
+}

@@ -1,0 +1,32 @@
+package example.SignUp;
+import java.util.*;
+// 회원가입 프로세스 구현
+public class SignUp {
+
+	public static void main(String[] args) {
+		String[] idList = {"qwer", "asdf", "zxcv"}; // " "은 문자열(배열)이기 때문에 문자배열들이 3번 들어갔으니 이 배열은 다차원 배열이 된다.
+		
+		// 1. 정보 입력.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("아이디: ");
+		String userId = scanner.nextLine();
+		System.out.println("패스워드: ");
+		String userPassword = scanner.nextLine();
+		System.out.println("패스워드 확인: ");
+		String userPasswordCheck = scanner.nextLine();
+		System.out.println("이름: ");
+		String userName = scanner.nextLine();
+		
+		// 2. 모두 입력 받았는지 검증.
+		// string.isBlank() : 문자열이 비었거나 띄어쓰기만 구성됐을 때 true 아니면 false
+		if (userId.isBlank() || userPassword.isBlank() || userPasswordCheck.isBlank() || userName.isBlank()) {
+			System.out.println("모두 입력해 주세요.");
+			return;
+		}
+		
+		//3. 아이디 중복 체크
+		
+	}
+	// 결과
+	// 성공, 실패 ( 모두 입력하지 않았을 때, 아이디가 중복 될 때 , 비밀번호가 서로 다를때 )
+}

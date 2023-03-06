@@ -1,0 +1,18 @@
+package chapter2.A_if;
+
+public class If {
+
+	public static void main(String[] args) {
+		int age = 10;
+		
+		if(age > 19) {
+			System.out.println("성인입니다.");
+		} else if (age < 8) {
+			System.out.println("미취학 아동 입니다."); // if 안에 if 쓰는거 매우 비추천. 어쩔 수 없이 사용할땐 사용.
+		} else {
+			System.out.println("청소년 입니다.");
+		}
+		
+	}
+
+}

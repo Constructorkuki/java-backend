@@ -1,0 +1,13 @@
+package chapter2.A_if;
+
+public class If {
+
+	public static void main(String[] args) {
+		int age = 10;
+		
+		if(age > 19) System.out.println("성인 입니다.");
+		else System.out.println("미성년자 입니다.");
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package chapter1.C_DataType;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		// 컴퓨터는 0 과 1 만 아는데 이를 표현하는 것이 bit.
+		// 8bit = 1byte.
+		// bit 의 8칸 중에 첫번째 칸은 부호로 사용.
+		// 실수의 경우 칸을 다 안씀. 어느정도 정수고 그 뒤로는 실수를 저장.
+		// 자료형이 다르면 연산 불가.
+		int intiger = 5;
+		double decimalA = 1.23;
+		double decimalB = 3.12;
+		
+		double resultA = intiger + decimalA ;
+		int resultB =  (int) (intiger + decimalA) ; // 소수 + 정수에서 선언된 자료형이 정수 라서 강제 형변환.
+		System.out.println(resultA);
+		
+		// 자료형 크기
+		short short1 = 32767;
+		// short1 = 32768; X
+		
+		// 4byte ( -2,147,483,648 ~  -2,147,483,647 )
+		int int1 = 2_147_483_647;
+		// int1 = 2_147_483_648; X
+		
+		long long1 = 2_147_483_647L;
+		// 정수타입의 리터럴 상수의 데이터 타입은 int 이기 떄문에
+		// long 타입의 리터럴 상수를 지정할 경우 리터럴 상수 뒤에 L을 붙임.
+		
+		//실수형 타입 4byte
+		float float1 = 3.14F; // 실수 타입의 리터럴 상수 데이터 타입은 double 이기 때문에 float 쓸 때 F 붙여줌.
+		
+		// 실수형 타입 8byte
+		double double1 = 3.1415;
+		
+		// float 와 double 의 차이
+		// float 는 소수점 6자리에서 오차 발생. double은 소수점 15자리에서 오차 발생.
+		
+		
+	}
+
+}
