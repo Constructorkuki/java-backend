@@ -31,14 +31,25 @@ public class ExchangeApplication {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
 		// 입력
-		System.out.println("넣을 화폐 : ");
-		String exchagingCurrency = scanner.nextLine();
-		System.out.println("바꿀 화폐 : ");
-		String exchagedCurrency = scanner.nextLine();
-		System.out.println("금액 : ");
-		int amount = scanner.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		String exchagingCurrency = null;
+		String exchagedCurrency = null;
+		int amount = 0;
+		// 입력받는 곳에는 대부분 try - catch 사용.
+		try {
+			System.out.println("넣을 화폐 : ");
+			exchagingCurrency = scanner.nextLine();
+			System.out.println("바꿀 화폐 : ");
+			exchagedCurrency = scanner.nextLine();
+			System.out.println("금액 : ");
+			amount = scanner.nextInt();
+		} catch(Exception exception) {
+			//exception.printStackTrace();
+			System.out.println("입력값의 타입이 맞지않습니다.");
+			return;
+		}
+		
 		
 		// 입력 검증
 		// 모두 입력이 되었는가
